@@ -1,0 +1,26 @@
+.footer {
+  text-align: center;
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+
+    &__label {
+      padding-left: 8px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

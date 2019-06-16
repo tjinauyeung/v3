@@ -1,0 +1,33 @@
+html {
+  font-family: Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  min-height: 100vh;
+  margin: auto;
+
+  &__main {
+    flex: 1;
+  }
+}
