@@ -1,17 +1,15 @@
-import React from "react"
-import "./styles.scss"
+import React from "react";
+import { extendClassName } from "../../utils";
+import "./styles.scss";
 
-const Profile = () => (
-  <div className="profile">
-    <img
-      className="profile__image"
-      src={require("../../assets/avatar.png")}
-    ></img>
+const Profile = ({ className }) => (
+  <div className={extendClassName("profile", className)}>
+    <img className="profile__image" src={require("../../assets/avatar.png")}></img>
     <div className="profile__text">
-      <div>Blog by Tjin Au Yeung</div>
-      <div>Software consultant. Currently at Xebia</div>
+      <div>written by Tjin Au Yeung</div>
+      <div>Software consultant at Xebia</div>
     </div>
   </div>
-)
+);
 
-export default Profile
+export default Profile;

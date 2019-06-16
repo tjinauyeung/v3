@@ -1,0 +1,51 @@
+.template {
+  margin-top: 4rem;
+  flex: 1;
+
+  &__profile {
+    margin: 3.5rem 0;
+  }
+
+  &__date {
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__content {
+    margin-top: 3rem;
+    font-size: calc(1.11 * var(--font-size-base));
+    line-height: 1.8;
+  }
+
+  &__nav {
+    display: flex;
+    min-height: 100px;
+    margin: 0 -50px;
+  }
+
+  &__link {
+    font-family: var(--font-family-serif);
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 12px;
+    }
+
+    &--next {
+      justify-content: flex-end;
+
+      svg {
+        margin-right: 0;
+        margin-left: 12px;
+      }
+    }
+  }
+}

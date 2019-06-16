@@ -4,8 +4,8 @@ module.exports = {
     author: `Tjin Au Yeung`,
     description: "Foo",
     social: {
-      twitter: `tjinauyeung`,
-    },
+      twitter: `tjinauyeung`
+    }
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -14,16 +14,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: `pages`,
-      },
+        path: `${__dirname}/src/articles`,
+        name: `articles`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/assets`,
-        name: `assets`,
-      },
+        name: `assets`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -31,15 +31,38 @@ module.exports = {
         plugins: [
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
+          `gatsby-remark-smartypants`
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
+        trackingId: `ADD YOUR TRACKING ID HERE`
+      }
     },
-  ],
-}
+    {
+      resolve: "gatsby-source-github",
+      options: {
+        headers: {
+          Authorization: `Bearer  9b0d82fc0bffae954c8da6a6e78fbf25c37f5a61`
+        },
+        queries: [
+          `{
+            repositoryOwner(login:"tjinauyeung"){
+              pinnedRepositories(first: 6) {
+                edges {
+                  node {
+                    name,
+                    description,
+                    url,
+                  }
+                }
+              }
+            }
+          }`
+        ]
+      }
+    }
+  ]
+};

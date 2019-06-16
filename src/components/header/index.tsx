@@ -1,24 +1,32 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Terminal } from "../../icons/terminal"
-import "./styles.scss"
+import React from "react";
+import { Link } from "gatsby";
+import "./styles.scss";
 
 const Header = () => (
   <header>
-    <nav className="navbar">
+    <nav className="nav">
       <li>
         <Link to="/">
-          <div className="navbar__logo">
-            <Terminal />
-            <span>tjinauyeung</span>
-          </div>
+          <div className="nav__logo">✌️tjinauyeung.nl</div>
         </Link>
       </li>
       <li>
-        <Link to="/about">about</Link>
+        <Link to="/" className="nav__link" activeClassName="is-active">
+          articles
+        </Link>
+      </li>
+      <li>
+        <Link to="/about" className="nav__link" activeClassName="is-active">
+          about
+        </Link>
+      </li>
+      <li>
+        <Link to="/projects" className="nav__link" activeClassName="is-active">
+          projects
+        </Link>
       </li>
     </nav>
   </header>
-)
+);
 
-export default Header
+export default Header;

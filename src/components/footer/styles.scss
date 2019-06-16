@@ -1,5 +1,7 @@
 .footer {
   text-align: center;
+  padding: 0 0 3.5rem;
+  font-size: calc(0.8 * var(--font-size-base));
 
   &__links {
     display: flex;
@@ -13,9 +15,16 @@
   &__link {
     display: flex;
     align-items: center;
-    margin: 20px;
+    padding: 1.5rem;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
 
     &__label {
+      cursor: pointer;
       padding-left: 8px;
 
       @media screen and (max-width: 768px) {

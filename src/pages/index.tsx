@@ -1,8 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Profile from "../components/profile"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import { graphql } from "gatsby";
+import Profile from "../components/profile";
+import Layout from "../components/layout";
+import Article from "../components/article";
+import SEO from "../components/seo";
+import "./index.scss";
 
 export const query = graphql`
   query {
@@ -27,27 +29,25 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 const Home = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
+  const articles = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <SEO title="Articles" />
-      <Profile />
-      {posts.map(({ node }) => (
-        <div key={node.fields.slug}>
-          <h3>
-            <Link to={node.fields.slug}>
-              {node.frontmatter.title || node.fields.slug}
-            </Link>
-          </h3>
-          <small>{node.frontmatter.date}</small>
-          <p>{node.frontmatter.description || node.excerpt}</p>
-        </div>
+      <Profile className="home__profile" />
+      {articles.map(({ node }) => (
+        <Article
+          key={node.fields.slug}
+          path={node.fields.slug}
+          date={node.frontmatter.date}
+          title={node.frontmatter.title}
+          description={node.frontmatter.description}
+        />
       ))}
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
