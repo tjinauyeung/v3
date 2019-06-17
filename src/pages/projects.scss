@@ -1,12 +1,19 @@
 .projects {
-  list-style: none;
-  padding: 0;
-  margin: 0 calc(var(--spacer-l) * -1);
+  margin-top: var(--spacer-xl);
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 calc(var(--spacer-l) * -1);
+  }
 }
 
 .project {
   min-height: 60px;
   display: flex;
+  flex: 1 1 240px;
   margin: var(--spacer-l);
 
   &__title {

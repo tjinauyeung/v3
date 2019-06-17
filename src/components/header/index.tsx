@@ -6,14 +6,14 @@ const Header = () => (
   <header>
     <nav className="nav">
       <li>
-        <Link to="/">
+        <Link to="/articles">
           <div className="nav__logo">
             ✌️<span>tjinauyeung</span>
           </div>
         </Link>
       </li>
       <li>
-        <Link to="/" className="nav__link" activeClassName="is-active">
+        <Link to="/articles" className="nav__link" activeClassName="is-active" partiallyActive>
           articles
         </Link>
       </li>

@@ -23,17 +23,20 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <SEO title="Articles" />
-      <h2>Pinned repositories</h2>
-      <ul className="projects">
-        {repos.map(repo => (
-          <li key={repo.id} className="project">
-            <a href={repo.url} target="_blank">
-              <h3 className="project__title">{repo.name}</h3>
-              <p className="project__description">{repo.description}</p>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div className="projects">
+        <h1 className="projects__title">Pinned</h1>
+        <ul className="projects__list">
+          {repos.map(repo => (
+            <li key={repo.id} className="project">
+              <a href={repo.url} target="_blank">
+                <Box />
+                <h3 className="project__title">{repo.name}</h3>
+                <p className="project__description">{repo.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </Layout>
   );
 };

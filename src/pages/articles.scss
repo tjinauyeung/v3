@@ -1,9 +1,9 @@
-.home {
+.articles {
   &__profile {
     margin: var(--spacer-xxl) 0 var(--spacer-xxxl);
   }
 
-  &__article {
+  &__item {
     margin-bottom: var(--spacer-xxxl);
   }
 }

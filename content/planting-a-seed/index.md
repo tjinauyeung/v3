@@ -1,8 +1,8 @@
 ---
-title: Quality over quantity
-date: 2019-06-18
-description: Do years of experience correlate to a better developer?
-path: /articles/quality-over-quantity/
+title: Planting a seed
+date: 2019-06-20
+description: How to get your employee to consider your proposal
+path: /articles/planting-a-seed/
 ---
 
 "You don't have enough baggage."
