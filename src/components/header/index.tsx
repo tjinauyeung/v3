@@ -7,7 +7,9 @@ const Header = () => (
     <nav className="nav">
       <li>
         <Link to="/">
-          <div className="nav__logo">✌️tjinauyeung.nl</div>
+          <div className="nav__logo">
+            ✌️<span>tjinauyeung</span>
+          </div>
         </Link>
       </li>
       <li>

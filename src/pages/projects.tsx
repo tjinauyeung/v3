@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Hexagon } from "../icons/hexagon";
+import { Box } from "../icons/box";
 import "./projects.scss";
 
 export const pageQuery = graphql`
@@ -26,13 +26,11 @@ const Projects = ({ data }) => {
       <ul className="projects">
         {repos.map(repo => (
           <li key={repo.id} className="project">
+            <Box />
             <a href={repo.url} target="_blank">
-              <h1 className="project__title">
-                <Hexagon />
-                {repo.name}
-              </h1>
+              <h3 className="project__title">{repo.name}</h3>
+              <p className="project__description">{repo.description}</p>
             </a>
-            <p className="project__description">{repo.description}</p>
           </li>
         ))}
       </ul>

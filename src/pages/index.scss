@@ -1,5 +1,9 @@
 .home {
   &__profile {
-    margin: 5rem 0 7rem;
+    margin: var(--spacer-xxl) 0 var(--spacer-xxxl);
+  }
+
+  &__article {
+    margin-bottom: var(--spacer-xxxl);
   }
 }

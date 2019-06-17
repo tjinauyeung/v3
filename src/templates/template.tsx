@@ -25,7 +25,7 @@ function Template({ data, pageContext }) {
   const { next, previous } = pageContext;
 
   return (
-    <Layout hideFooter>
+    <Layout>
       <main className="template">
         <p className="template__date">{frontmatter.date}</p>
         <h1 className="template__title">{frontmatter.title}</h1>
@@ -43,12 +43,12 @@ function Template({ data, pageContext }) {
 const Prev = ({ to, title }) => (
   <Link className="template__link" to={to}>
     <ChevronLeft />
-    {title}
+    <span>{title}</span>
   </Link>
 );
 const Next = ({ to, title }) => (
   <Link className="template__link template__link--next" to={to}>
-    {title}
+    <span>{title}</span>
     <ChevronRight />
   </Link>
 );

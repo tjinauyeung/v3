@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `tjinauyeung`,
@@ -45,7 +47,7 @@ module.exports = {
       resolve: "gatsby-source-github",
       options: {
         headers: {
-          Authorization: `Bearer  9b0d82fc0bffae954c8da6a6e78fbf25c37f5a61`
+          Authorization: `Bearer  ${process.env.GITHUB_API_KEY}`
         },
         queries: [
           `{

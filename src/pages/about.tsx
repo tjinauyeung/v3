@@ -7,7 +7,7 @@ const About = () => (
   <Layout>
     <SEO title="About" />
     <div className="about">
-      <h1>Hi, I'm Tjin 👋</h1>
+      <h1>Hi, I'm Tjin. I like to build things.</h1>
       <p>I'm a front end developer with an eye for UI / UX</p>
       <img className="about__avatar" src={require("../assets/avatar.png")} />
     </div>

@@ -7,7 +7,12 @@ const Profile = ({ className }) => (
     <img className="profile__image" src={require("../../assets/avatar.png")}></img>
     <div className="profile__text">
       <div>written by Tjin Au Yeung</div>
-      <div>Software consultant at Xebia</div>
+      <div>
+        Software consultant @
+        <a href="https://www.xebia.com" target="_blank">
+          Xebia
+        </a>
+      </div>
     </div>
   </div>
 );

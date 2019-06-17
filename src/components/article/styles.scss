@@ -1,19 +1,15 @@
 .article {
-  margin-bottom: 7rem;
-
   &__title {
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0;
+    margin-top: var(--spacer-xxs);
+    margin-bottom: 0;
   }
 
   &__date {
     margin: 0;
-    font-style: italic;
   }
 
   &__description {
-    margin: 0;
-    line-height: 1.5;
+    font-family: var(--font-family-serif);
+    margin-top: var(--spacer-xs);
   }
 }

@@ -39,6 +39,7 @@ const Home = ({ data }) => {
       <Profile className="home__profile" />
       {articles.map(({ node }) => (
         <Article
+          className="home__article"
           key={node.fields.slug}
           path={node.fields.slug}
           date={node.frontmatter.date}
