@@ -1,15 +1,10 @@
 .projects {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: var(--spacer-xxl) calc(var(--spacer-l) * -1);
+  margin: 0 calc(var(--spacer-l) * -1);
 }
 
 .project {
-  flex: 1 1 240px;
   min-height: 60px;
   display: flex;
   margin: var(--spacer-l);

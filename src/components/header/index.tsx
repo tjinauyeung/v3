@@ -18,13 +18,13 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link to="/about" className="nav__link" activeClassName="is-active">
-          about
+        <Link to="/projects" className="nav__link" activeClassName="is-active">
+          projects
         </Link>
       </li>
       <li>
-        <Link to="/projects" className="nav__link" activeClassName="is-active">
-          projects
+        <Link to="/about" className="nav__link" activeClassName="is-active">
+          about
         </Link>
       </li>
     </nav>

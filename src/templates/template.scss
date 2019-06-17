@@ -17,9 +17,23 @@
 
   &__content {
     margin-top: var(--spacer-xxl);
-    font-family: var(--font-family-serif);
-    font-size: calc(1.11 * var(--font-size-base));
-    line-height: 1.8;
+    font-size: var(--font-size-paragraph);
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: var(--spacer-xxl);
+    }
+
+    p {
+      margin-bottom: var(--spacer-xl);
+    }
+
+    hr {
+      color: var(--color-border);
+    }
   }
 
   &__nav {

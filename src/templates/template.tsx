@@ -33,8 +33,8 @@ function Template({ data, pageContext }) {
         <Profile className="template__profile" />
       </main>
       <div className="template__nav">
-        {next && <Prev to={next.fields.slug} title={next.frontmatter.title} />}
-        {previous && <Next to={previous.fields.slug} title={previous.frontmatter.title} />}
+        {previous && <Prev to={previous.fields.slug} title={previous.frontmatter.title} />}
+        {next && <Next to={next.fields.slug} title={next.frontmatter.title} />}
       </div>
     </Layout>
   );

@@ -33,16 +33,16 @@ exports.createPages = ({ graphql, actions }) => {
     const articles = result.data.allMarkdownRemark.edges;
 
     articles.forEach((article, i) => {
-      const isFirst = i === 0;
-      const isLast = i === articles.length - 1;
+      const previous = i === articles.length - 1 ? null : articles[i + 1].node;
+      const next = i === 0 ? null : articles[i - 1].node;
 
       createPage({
         path: article.node.fields.slug,
         component: articleTemplate,
         context: {
           slug: article.node.fields.slug,
-          previous: isLast ? null : articles[i + 1].node,
-          next: isFirst ? null : articles[i - 1].node
+          previous,
+          next
         }
       });
     });

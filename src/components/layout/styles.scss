@@ -2,6 +2,8 @@
 
 :root {
   --font-size-base: 18px;
+  --font-size-paragraph: 1.12rem;
+
   --font-family-serif: Libre Baskerville, serif;
   --font-family-sans-serif: Source Sans Pro, sans-serif;
   --font-family-mono: Source Code Pro, monospace;
@@ -47,6 +49,10 @@ h1 {
 
 h2 {
   line-height: 1.4;
+}
+
+p {
+  font-size: var(--font-size-paragraph);
 }
 
 body {

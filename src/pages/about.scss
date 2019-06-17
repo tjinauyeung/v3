@@ -1,10 +1,22 @@
 .about {
-  margin-top: var(--spacer-xl);
+  margin-top: var(--spacer-xxl);
+  // display: flex;
+  flex-wrap: wrap;
 
   &__avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background-color: var(--color-avatar);
+    margin: var(--spacer-xl);
+    margin-left: 0;
+  }
+
+  &__article {
+    flex: 1 1 400px;
+  }
+
+  &__paragraph {
+    font-size: var(--font-size-paragraph);
   }
 }
