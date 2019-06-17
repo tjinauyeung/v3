@@ -15,11 +15,15 @@ In recent years the churn of front-end technologies is so high often knowledge b
 
 Why is it then that companies outweigh years of experience over demonstratable skill? I can think of a couple of reasons.
 
-### Issues on measuring skill
+### Flawed technical interview
 
 First of all, it is very hard to test someones skill level in an interview. The number of posts on Hackernews on flawed technical interviews demonstrate the difficulty of assessing a candidates technical level. Instead of going for a flawed technical assessment and putting all the trust into the software developers capable of assessing, it is much easier for business to look at years of experience as a measurement.
 
+### Growing flow of junior devs
+
 Second, there are a growing number of developers from various sources such as bootcamps, crypto hackers flowing into the job market. The quickest and easiest filter junior developers to look at the amount of years a developer has been working.
+
+### Experience does not result in better programmers
 
 For the record, I dó believe there is an amount of skill that can only be acquired through professional work experience. For example, how to work within a team. How to deal with stakeholders. How to deal with manager expectations and how to navigate within a company culture. These are things that you cannot learn from books or by coding on your own. It needs to be put in practice working in a company.
 
@@ -36,4 +40,6 @@ In my old job I have a colleague that has 10 years of work experience in the fro
 
 ### How to measure?
 
-The million dollar question is; how dó we measure the skill of an engineer? I think it starts with asking yourself the question, what are the skills we're looking for in an engineer? I'll spend some time thinking.
+The million dollar question is; how dó we measure the skill of an engineer? I think it starts with asking yourself the question, what are the skills we're looking for in an engineer? If it is technical skill, ask yourself how to test this and use it. There are a number of third party services that provide the tools to test a candidate from a technical perspective.
+
+As for the soft skills, it's important to have a good, healthy conversation with the candidate.

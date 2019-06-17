@@ -1,9 +1,13 @@
 .articles {
   &__profile {
-    margin: var(--spacer-xxl) 0 var(--spacer-xxxl);
+    margin: var(--spacer-xxl) 0 var(--spacer-xxl);
   }
 
   &__item {
-    margin-bottom: var(--spacer-xxxl);
+    margin-bottom: var(--spacer-xl);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

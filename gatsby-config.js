@@ -52,12 +52,20 @@ module.exports = {
         queries: [
           `{
             repositoryOwner(login:"tjinauyeung"){
-              pinnedRepositories(first: 6) {
+              pinnedRepositories(first: 10) {
                 edges {
                   node {
                     name,
                     description,
                     url,
+                    languages(first:10) {
+                      edges {
+                        node {
+                          name,
+                          color
+                        }
+                      }
+                    }
                   }
                 }
               }

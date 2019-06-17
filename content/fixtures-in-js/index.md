@@ -1,6 +1,6 @@
 ---
 title: Fixtures in JS
-date: 2019-06-17
+date: 2019-06-22
 description: How to generate fixtures in your JS projects
 path: /articles/fixtures-in-js/
 ---

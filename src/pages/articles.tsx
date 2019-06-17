@@ -34,8 +34,6 @@ export const query = graphql`
 const Articles = ({ data }) => {
   const articles = data.allMarkdownRemark.edges;
 
-  console.log(articles);
-
   return (
     <Layout>
       <SEO title="Articles" />

@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import Profile from "../components/profile";
+import SEO from "../components/seo";
 import { ChevronRight } from "../icons/chrevron-right";
 import { ChevronLeft } from "../icons/chrevron-left";
 import "./template.scss";
@@ -26,6 +27,7 @@ function Template({ data, pageContext }) {
 
   return (
     <Layout>
+      <SEO title={frontmatter.title} />
       <main className="template">
         <p className="template__date">{frontmatter.date}</p>
         <h1 className="template__title">{frontmatter.title}</h1>
