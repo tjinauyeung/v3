@@ -3,13 +3,14 @@
 :root {
   --font-size-base: 18px;
   --font-size-paragraph: 1.12rem;
+  --font-size-small: 0.9rem;
 
   --font-family-serif: Libre Baskerville, serif;
   --font-family-sans-serif: Source Sans Pro, sans-serif;
   --font-family-mono: Source Code Pro, monospace;
 
   --color-border: #f0f0f0;
-  --color-link: #000;
+  --color-link: inherit;
   --color-avatar: #e2be4c;
 
   --padding-container: 20px;
@@ -75,11 +76,11 @@ a:focus {
   flex-direction: column;
   min-height: 100vh;
   padding: 0 var(--padding-container);
-  max-width: 740px;
+  max-width: 800px;
   margin: auto;
 
   &__main {
-    max-width: 740px;
+    max-width: 700px;
     width: 100%;
     margin: auto;
     flex: 1;

@@ -8,7 +8,8 @@ const Header = () => (
       <li>
         <Link to="/articles">
           <div className="nav__logo">
-            ✌️<span>tjinauyeung</span>
+            <img src={require("../../../static/favicon.png")} />
+            <span>tjinauyeung</span>
           </div>
         </Link>
       </li>

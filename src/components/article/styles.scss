@@ -1,11 +1,12 @@
 .article {
   &__title {
-    margin-top: var(--spacer-xxs);
+    margin-top: var(--spacer-xs);
     margin-bottom: 0;
   }
 
   &__date {
     margin: 0;
+    font-size: var(--font-size-small);
   }
 
   &__description {
