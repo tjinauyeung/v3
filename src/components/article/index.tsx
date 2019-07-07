@@ -5,11 +5,11 @@ import "./styles.scss";
 
 const Article = ({ className, title, date, description, path }) => (
   <div className={extendClassName("article", className)}>
+    <p className="article__date">{date}</p>
     <Link to={path}>
-      <p className="article__date">{date}</p>
       <h2 className="article__title">{title}</h2>
-      <p className="article__description">{description}</p>
     </Link>
+    <p className="article__description">{description}</p>
   </div>
 );
 

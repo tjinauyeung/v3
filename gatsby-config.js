@@ -42,37 +42,6 @@ module.exports = {
       options: {
         trackingId: `ADD YOUR TRACKING ID HERE`
       }
-    },
-    {
-      resolve: "gatsby-source-github",
-      options: {
-        headers: {
-          Authorization: `Bearer  ${process.env.GITHUB_API_KEY}`
-        },
-        queries: [
-          `{
-            repositoryOwner(login:"tjinauyeung"){
-              pinnedRepositories(first: 10) {
-                edges {
-                  node {
-                    name,
-                    description,
-                    url,
-                    languages(first:10) {
-                      edges {
-                        node {
-                          name,
-                          color
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }`
-        ]
-      }
     }
   ]
 };

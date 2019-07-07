@@ -10,8 +10,12 @@ const About = () => (
       <h1>Hi, I'm Tjin.</h1>
       <p>I'm a software engineer specialised in writing modern Javascript.</p>
       <p>
-        Before transitioning into software development I graduated with a degree in Building
-        Engineering. Because of my affinity with design I quicky grew towards the front-end.
+        Before transitioning into software I graduated with a degree in Building Engineering. After
+        a short gig as a{" "}
+        <a href="https://www.behance.net/tjinauyeung" target="_blank">
+          graphic designer
+        </a>{" "}
+        I quicky grew towards the front-end web development because of my affinity with design.
       </p>
       <p>
         Recently I've been building more back-end services and APIs moving towards a full stack
@@ -30,10 +34,11 @@ const About = () => (
         <a href="https://www.codaisseur.com" target="_blank">
           Codaisseur
         </a>{" "}
-        before landing a gig at{" "}
+        before joining{" "}
         <a href="https://www.xebia.com" target="_blank">
           Xebia
         </a>
+        , a software consultancy based in the Netherlands.
       </p>
       <img className="about__avatar" src={require("../assets/avatar.png")} />
     </div>
