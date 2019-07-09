@@ -1,9 +1,13 @@
 ---
 title: Generate random mock data with Chance.js
-date: 2019-06-18
+date: 2019-07-09
 description: How random data can make your tests more effective.
 path: /articles/generate-random-mock-data-with-chance/
+image: /cover.jpg
+caption: Photo by Spencer Watson on Unsplash
 ---
+
+![cover image](./cover.jpg)
 
 Ever since I've started using more [TDD](https://en.wikipedia.org/wiki/Test-driven_development) I've encountered different patterns to make the process more effective, easy and fun. In this article I like to share with you a helpful tool for testing with random generated data: **Chance.js**.
 

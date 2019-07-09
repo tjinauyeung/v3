@@ -33,14 +33,24 @@ module.exports = {
         plugins: [
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`
+          `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+              wrapperStyle: `
+                width: calc(100% + calc(var(--padding-container) * 2));
+                margin: var(--spacer-xl) calc(var(--padding-container) * -1);
+              `
+            }
+          }
         ]
       }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`
+        trackingId: `UA-143525874-1`
       }
     }
   ]
