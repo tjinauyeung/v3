@@ -1,10 +1,8 @@
 ---
-title: Generate random mock data with Chance.js
+title: Randomize your mock data with Chance.js
 date: 2019-07-09
 description: How random data can make your tests more effective.
-path: /articles/generate-random-mock-data-with-chance/
-image: /cover.jpg
-caption: Photo by Spencer Watson on Unsplash
+path: /articles/randomize-your-mock-data-with-chance/
 ---
 
 ![cover image](./cover.jpg)
@@ -13,9 +11,7 @@ Ever since I've started using more [TDD](https://en.wikipedia.org/wiki/Test-driv
 
 ### Why should you randomise your mock data?
 
-When you test your app you'll often end up needing to mock your data. The more this data resembles the production data the more effective your test becomes. 
-
-In case you're hardcoding your test data, it will miss the variety it can have in the real world. Additionally, the data you enter will be biased, potentially leaving undiscovered bugs due to untested (edge) cases.
+When you test your app you'll often end up needing mock data. The more this mock data resembles the production data the more effective your test becomes. In case you're hardcoding your test data, it will miss the variety it can have in the real world. Additionally, the data you enter will be biased, potentially leaving undiscovered bugs due to untested (edge) cases.
 
 Real data is varied and could contain characters that may not play nice with your code, such as apostrophes, or unicode characters from other languages. Testing with more realistic sample data can help you catch more bugs and make your app more robust.
 

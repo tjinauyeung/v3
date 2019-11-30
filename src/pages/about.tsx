@@ -8,25 +8,27 @@ const About = () => (
     <SEO title="About" />
     <div className="about">
       <h1>Hi, I'm Tjin.</h1>
-      <p>I'm a software engineer specialised in writing modern Javascript.</p>
       <p>
-        I've worked at companies i.e.{" "}
+        I'm a software engineer specialised in writing modern Javascript, currently at{" "}
+        <a href="https://www.xebia.com" target="_blank">
+          Xebia
+        </a>
+        , a software consultancy based in the Netherlands .
+      </p>
+      <p>
+        Previously, I've worked at companies i.e.{" "}
         <a href="https://www.usabilla.com" target="_blank">
           Usabilla
         </a>{" "}
         and{" "}
         <a href="https://www.nxchange.com" target="_blank">
           Nxchange
-        </a>{" "}
-        before joining{" "}
-        <a href="https://www.xebia.com" target="_blank">
-          Xebia
         </a>
-        , a software consultancy based in the Netherlands.
+        .
       </p>
       <p>
-        Before transitioning into software I graduated with a degree in Building Engineering. After
-        a short gig as a{" "}
+        Before transitioning into software I graduated with a degree <i>(B.Eng.)</i> in the built
+        environment. After a short gig as a{" "}
         <a href="https://www.behance.net/tjinauyeung" target="_blank">
           graphic designer
         </a>{" "}
@@ -34,7 +36,7 @@ const About = () => (
       </p>
       <p>
         In recent period, I've been building more back-end services and APIs moving towards a full
-        stack engineer that works across the stack.
+        stack engineer who can work across the stack.
       </p>
       <img className="about__avatar" src={require("../assets/avatar.png")} />
     </div>

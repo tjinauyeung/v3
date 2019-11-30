@@ -8,19 +8,19 @@ const Header = () => (
       <li>
         <Link to="/articles">
           <div className="nav__logo">
-            <img src={require("../../../static/favicon.png")} />
+            <img src={require("../../assets/logo.png")} />
             <span>Tjin Au Yeung</span>
           </div>
         </Link>
       </li>
       <li>
         <Link to="/articles" className="nav__link" activeClassName="is-active" partiallyActive>
-          articles
+          Articles
         </Link>
       </li>
       <li>
         <Link to="/about" className="nav__link" activeClassName="is-active">
-          about
+          About
         </Link>
       </li>
     </nav>
