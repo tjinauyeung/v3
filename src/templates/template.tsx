@@ -17,7 +17,7 @@ export const pageQuery = graphql`
         title
         description
         image {
-          absolutePath
+          publicURL
         }
       }
     }
@@ -34,7 +34,7 @@ function Template({ data, pageContext }) {
       <SEO
         title={frontmatter.title}
         description={frontmatter.description}
-        image={frontmatter.image.absolutePath}
+        image={frontmatter.image.publicURL}
       />
       <main className="template">
         <p className="template__date">{frontmatter.date}</p>

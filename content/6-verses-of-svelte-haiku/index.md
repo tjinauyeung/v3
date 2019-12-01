@@ -6,7 +6,9 @@ path: /articles/6-verses-of-svelte-haiku/
 image: cover.jpg
 ---
 
-![cover image](./cover.jpg)
+<a href="https://unsplash.com/@arisu_view?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+  <img src="cover.jpg" alt="cover image for article: 6 verses of Svelte haiku">
+</a>
 
 [Svelte 3.0](https://svelte.dev/blog/svelte-3-rethinking-reactivity) came out just a couple of months ago and received a lot of attention from the JS community. It got me interested in exploring the technology and I ended up doing a lightning talk on it at [my company](https://xebia.com/) during our bi-weekly knowledge sharing session, [the XKE](https://xebiatalent.com/our-culture).
 
