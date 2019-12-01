@@ -8,7 +8,7 @@ image: cover.jpg
 
 ![cover image](./cover.jpg)
 
-Svelte 3.0 came out just a couple of months ago and received a lot of attention from the JS community. It got me interested in exploring the technology and I ended up doing a lightning talk on it at my company during our bi-weekly knowledge sharing session, the XKE.
+[Svelte 3.0](https://svelte.dev/blog/svelte-3-rethinking-reactivity) came out just a couple of months ago and received a lot of attention from the JS community. It got me interested in exploring the technology and I ended up doing a lightning talk on it at [my company](https://xebia.com/) during our bi-weekly knowledge sharing session, [the XKE](https://xebiatalent.com/our-culture).
 
 To structure the talk I've written a 6 verse haiku, each verse represents a feature of Svelte during my research. Happy to share this with you today.
 
@@ -225,7 +225,7 @@ ___
 
 ### Use for joy
 
-I hope I've convinced you that using Svelte is simple, easy and fun. Use it and you'll feel joy. The API is very concise and easy to learn. There is a lot of momentum; the community is growing and new tools and projects are published regularly.
+I hope I've convinced you that using Svelte is simple, easy and fun. Use it and you'll feel joy. The API is very concise and easy to learn. There is a lot of momentum; the community is growing and [new tools and projects](https://github.com/ryanatkn/awesome-svelte-resources) are published regularly.
 
 However there is also a double meaning in this verse. Svelte is young, it is not as mature as the big three and in some cases, such as the build tooling, it can feel a bit rough around the edges.
 
