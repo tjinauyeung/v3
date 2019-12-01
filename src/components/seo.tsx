@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title, image }) {
+function SEO({ description, lang, meta, title, image }: any) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title, image }) {
         lang
       }}
       title={title}
-      titleTemplate={`${site.siteMetadata.title} | %s`}
+      titleTemplate={`%s - ${site.siteMetadata.title}`}
       link={[
         { rel: "icon", type: "image/png", href: require("../../static/favicon.png") },
         { rel: "shortcut icon", type: "image/png", href: require("../../static/favicon.png") }

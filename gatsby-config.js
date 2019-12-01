@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: `tjinauyeung`,
+    title: `Tjin Au Yeung - Software Consultant at Xebia`,
     author: `Tjin Au Yeung`,
     description: "Personal blog of Tjin Au Yeung",
     social: {

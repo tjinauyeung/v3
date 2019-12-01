@@ -8,9 +8,9 @@ const Profile = ({ className }) => (
     <div className="profile__text">
       <div>Written by Tjin Au Yeung</div>
       <div>
-        Software consultant @
+        Software consultant {" "}
         <a href="https://www.xebia.com" target="_blank">
-          Xebia
+          @Xebia
         </a>
       </div>
     </div>

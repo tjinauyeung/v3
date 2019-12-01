@@ -6,7 +6,7 @@ const Header = () => (
   <header>
     <nav className="nav">
       <li>
-        <Link to="/articles">
+        <Link to="/">
           <div className="nav__logo">
             <img src={require("../../assets/logo.png")} />
             <span>Tjin Au Yeung</span>
@@ -15,12 +15,12 @@ const Header = () => (
       </li>
       <li>
         <Link to="/articles" className="nav__link" activeClassName="is-active" partiallyActive>
-          Articles
+          <span>Articles</span>
         </Link>
       </li>
       <li>
-        <Link to="/about" className="nav__link" activeClassName="is-active">
-          About
+        <Link to="/about" className="nav__link" activeClassName="is-active" partiallyActive>
+          <span>About</span>
         </Link>
       </li>
     </nav>

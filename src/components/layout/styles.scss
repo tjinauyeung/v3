@@ -12,6 +12,7 @@
   --color-border: #f0f0f0;
   --color-text: #222;
   --color-link: #658f8f;
+  --color-link-hover: #306565;
   --color-avatar: #e2be4c;
   --color-accent: #658f8f;
 
@@ -91,12 +92,15 @@ a:focus {
     flex-direction: column;
 
     a,
-    a:hover,
     a:visited,
     a:active,
     a:focus {
       border-bottom: 1px solid var(--color-link);
       color: var(--color-link);
+    }
+
+    a:hover {
+      color: var(--color-link-hover);
     }
   }
 }
