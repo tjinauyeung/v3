@@ -15,6 +15,10 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        description
+        image {
+          absolutePath
+        }
       }
     }
   }
@@ -27,7 +31,11 @@ function Template({ data, pageContext }) {
 
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description}
+        image={frontmatter.image.absolutePath}
+      />
       <main className="template">
         <p className="template__date">{frontmatter.date}</p>
         <h1 className="template__title">{frontmatter.title}</h1>

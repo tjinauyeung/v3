@@ -1,8 +1,9 @@
 ---
 title: 6 verses of Svelte haiku
 date: 2019-11-30
-description: Svelte explained in 6 verses of haiku.
+description: Learn about v3 of front-end framework Svelte.js through 6 verses of haiku
 path: /articles/6-verses-of-svelte-haiku/
+image: cover.jpg
 ---
 
 ![cover image](./cover.jpg)

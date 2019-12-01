@@ -3,6 +3,7 @@ title: Randomize your mock data with Chance.js
 date: 2019-07-09
 description: How random data can make your tests more effective.
 path: /articles/randomize-your-mock-data-with-chance/
+image: cover.jpg
 ---
 
 ![cover image](./cover.jpg)

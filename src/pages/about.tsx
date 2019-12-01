@@ -5,7 +5,10 @@ import "./about.scss";
 
 const About = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO
+      title="About"
+      description="About page of Tjin Au Yeung, software engineering consultant at Xebia"
+    />
     <div className="about">
       <img className="about__avatar" src={require("../assets/avatar.png")} />
       <h1>Hi, I'm Tjin.</h1>
@@ -21,7 +24,7 @@ const About = () => (
         <a href="https://www.usabilla.com" target="_blank">
           Usabilla (SurveyMonkey)
         </a>{" "}
-        and fintech startup {" "}
+        and fintech startup{" "}
         <a href="https://www.nxchange.com" target="_blank">
           Nxchange
         </a>
@@ -29,7 +32,8 @@ const About = () => (
       </p>
       <p>
         Before transitioning into software I graduated with a degree <i>(B.Eng.)</i> in the built
-        environment. After a short gig as a graphic designer I quicky grew towards the front-end web development because of my affinity with design.
+        environment. After a short gig as a graphic designer I quicky grew towards the front-end web
+        development because of my affinity with design.
       </p>
       <p>
         In recent period, I've been building more back-end services and APIs moving towards a full
