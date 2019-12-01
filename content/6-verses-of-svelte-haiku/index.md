@@ -237,8 +237,4 @@ Nevertheless, for big projects I would still wait with using Svelte until the co
 
 All in all, I'm impressed with the work that the Svelte creators and contributors have done. Keep up the good work! I am eager to see where this project is going.
 
-To end with a small plug, I'm currently working on a form management library for Svelte: [https://github.com/tjinauyeung/svelte-forms-lib](https://github.com/tjinauyeung/svelte-forms-lib). It is still in its infancy but please check it out and let me know what you think! 
-
-<br/>
-
 **Go forth and experiment!**
