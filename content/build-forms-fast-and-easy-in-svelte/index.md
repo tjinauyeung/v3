@@ -121,7 +121,7 @@ For the majority of cases this is all that is needed to setup validation. For th
 
 ### Visit the docs
 
-Considering how important how important documentation is when devs evaluate a tool, considerable effort is put in creating a [documentation website](https://svelte-forms-lib-sapper-docs.tjin.now.sh).
+Considering how important documentation is when developers evaluate a tool, time and effort is put in creating a slick [documentation website](https://svelte-forms-lib-sapper-docs.tjin.now.sh).
 
 <a href="https://svelte-forms-lib-sapper-docs.tjin.now.sh" target="_blank">
   <img alt="screenshot of documentation website for svelte-forms-lib" src="documentation-website.png"/>
@@ -135,4 +135,4 @@ Here you'll find examples and code snippets you can easily copy and use to help 
 
 I hope this library meets your needs when building forms in [Svelte](https://svelgte.dev). Please feel free to share your thoughts on the project and [create issues](https://github.com/tjinauyeung/svelte-forms-lib) when you encounter bugs or when you like to see a new feature.
 
-I plan to actively develop and maintain the library for the coming period, so I'm very curious to hear what you think of it.
+This project is still very much a work in progress. I plan to actively develop and maintain the library for the foreseeable future, so I'm curious to hear what you think of it.
