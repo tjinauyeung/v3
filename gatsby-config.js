@@ -5,9 +5,10 @@ module.exports = {
     title: `Tjin Au Yeung - Software Consultant at Xebia`,
     author: `Tjin Au Yeung`,
     description: "Personal blog of Tjin Au Yeung",
+    host: 'https://tjinauyeung.com',
     social: {
       twitter: `tjinauyeung`
-    }
+    },
   },
   plugins: [
     `gatsby-plugin-typescript`,
