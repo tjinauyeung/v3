@@ -20,7 +20,7 @@ However, how does one embark on this journey riddled with uncertainty?
 
 ---
 
-## The Problem
+### The Problem
 
 The problems arising from software entropy and the need for a rebuild can roughly be categorised under the following three topics:
 
@@ -66,7 +66,7 @@ In the remainder of the article I'll discuss each step more in depth.
 
 ---
 
-## Buy-in
+### Buy-in
 
 <div class="center-image">
   <img src="./stakeholders.jpg" alt="image showing stakeholders">
@@ -82,7 +82,7 @@ Lucky for us, we had a very accommodating Product Owner who was empathetic from 
 
 ---
 
-## Feasibility
+### Feasibility
 
 <div class="center-image">
   <img src="./feasibility.jpg" alt="diagram showing feasibility">
@@ -98,7 +98,7 @@ With positive result from the feasibility test we've decided on a core technique
 
 ---
 
-## Prioritise
+### Prioritise
 
 Depending on the size of the application the migration can take a significant amount of time. Upon the start questions arise, where to start? I started by discussing this with the team to come up with a logical prioritisation of your efforts. Areas which are removed in the future could be skipped over, areas which have the most business value are higher priority. 
 
@@ -116,7 +116,7 @@ Whichever approach you start with, agree with the team and work your way through
 
 ---
 
-## Increments
+### Increments
 
 Probably the most important technical factor was to perform the migration in increments instead of one big bang rebuild. Being able to migrate incrementally and still have a working project made the strategy applicable to applications of any size, small or big. 
 
@@ -138,7 +138,7 @@ Having incremental migration as an option is very powerful, if not, a requiremen
 
 ---
 
-## Focus
+### Focus
 
 **Avoid new features**
 
@@ -159,7 +159,7 @@ In case you have new features which need to be implemented asap, do you implemen
 
 ---
 
-## Decoupling
+### Decoupling
 
 Most of us know the value of modular, [decoupled](https://en.wikipedia.org/wiki/Loose_coupling) software,  In the light of a tech migration picking new tools and technologies, that are decoupled and framework agnostic, prevent vendor lock in and enable easier path to migration in the future. 
 
@@ -169,7 +169,7 @@ My advice is to pick framework agnostic tools where you can, and write your appl
 
 ---
 
-## Testing
+### Testing
 
 Finally, testing can help refactoring with confidence. There's a high chance that your code will break during a migration. It is subject to lots of change and especially in the beginning, the developers still need to familiarize themselves with the technology and the new workflow. In order to catch bugs during the migration and / or have your business crucial paths working as expected, it is beneficial to have end to end tests in place before you start.
 
@@ -184,9 +184,7 @@ Thus, even when resources are scarce, you should identify business crucial flows
 
 ---
 
-## Challenge
-
-**Loss of specs**
+### Loss of specs
 
 Hopefully, many of the discussed tips can help you tackle a migration. The biggest challenge, however, coming with a rebuild / migration of your application, lies within the specification of your app.
 
@@ -200,9 +198,11 @@ To solve this issue developers need to work closely together with the domain exp
 
 ---
 
-## Summary
+### What's next?
 
-As with perishable goods, code bases also have an expiration date. As technology progresses, existing code becomes more brittle. New features take longer to implement and it becomes harder to find the right people to do the work. At this point a big migration of the application to a new stack should be considered as a solution.
+As with perishable goods, code bases also have an expiration date. As software ages, existing code becomes more brittle. New features take longer to implement and it becomes harder to find the right people to do the work. 
+
+At this point a big migration of the application to a new stack should be considered as a solution.
 
 We've discussed 7 tips to take into account when starting this journey:
 
