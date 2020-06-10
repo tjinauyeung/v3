@@ -7,7 +7,7 @@ image: cover.jpeg
 ---
 
 <div class="center-image">
-  <iframe width="800" height="450" style="margin: 20px -50px;" src="https://www.youtube.com/embed/r6jcqCm5C1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="840" height="450" style="margin: 20px -70px;" src="https://www.youtube.com/embed/r6jcqCm5C1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Every year the caribou in the northern Americas embark on an epic journey in search for greener pastures. They head north, along well-trod annual routes towards their summer grazing grounds in the mighty Tundra. Some herds may travel more than 600 miles during this trip. The reason for this massive undertaking? The environment is spent, and can no longer accommodate them. In order to survive, they need to migrate to newer, nutrient-richer soils.
@@ -52,7 +52,7 @@ Similarly, existing engineers will likely feel the pressure to learn new technol
 
 One way to solve these issues is to modernise your stack; migrate all existing code to a more modern technologies. A more up to date stack can make recruiting easier and better retain existing employees. Furthermore, it can enable new techniques and possibilities for your product moving forward. However, depending on the size of your app and your team you may not have the resources for such an undertaking. 
 
-At [ING](https://developer.ing.com/openbanking/) I recently completed a migration of a front-end application with <span style="font-family: monospace;">58.252</span> LOC moving away from Polymer to a React based stack. In retrospect there were a few steps we've followed which has made this a successful migration, which can be summed up in this TLDR;
+At my client, I recently completed a migration of a front-end application with <span style="font-family: monospace;">58.252</span> LOC moving away from Polymer to a React based stack. In retrospect there were a few steps we've followed which has made this a successful migration, which can be summed up in this TLDR;
 
 - **Buy in** — Convince stakeholders
 - **Feasibility** — Test your approach
@@ -88,7 +88,7 @@ Lucky for us, we had a very accommodating Product Owner who was empathetic from 
   <img src="./feasibility.jpg" alt="diagram showing feasibility">
 </div>
 
-In the [WBAA department](https://medium.com/wbaa/what-does-ing-wb-advanced-analytics-do-707a09175530) at [ING](https://developer.ing.com/openbanking/) there has been a shift to a more product focused development cycle. A big influencer is the framework of [design thinking](https://www.interaction-design.org/literature/topics/design-thinking), and part of it is the feasibility test. 
+In our department there has been a shift to a more product focused development cycle. A big influencer is the framework of [design thinking](https://www.interaction-design.org/literature/topics/design-thinking), and part of it is the feasibility test. 
 
 Applying this to our process meant that we needed to build a [proof of concept](https://lvivity.com/proof-of-concept-meaning) as soon as possible to test if our idea was technically achievable. Aside from measuring feasibility, the other major advantage is being able to identify potential obstacles early.
 
@@ -163,7 +163,7 @@ In case you have new features which need to be implemented asap, do you implemen
 
 Most of us know the value of modular, [decoupled](https://en.wikipedia.org/wiki/Loose_coupling) software,  In the light of a tech migration picking new tools and technologies, that are decoupled and framework agnostic, prevent vendor lock in and enable easier path to migration in the future. 
 
-Tove give a more concrete example, our legacy project was built around a [redux](https://redux.js.org/introduction/core-concepts), encapsulating much of the front-end business logic. This choice proved to be huge time saver, since it enabled us to move to a new framework, while preserving all the code within redux; reducing our  workload significantly while migrating.
+To give a more concrete example, our legacy project was built around a [redux](https://redux.js.org/introduction/core-concepts), encapsulating much of the front-end business logic. This choice proved to be huge time saver, since it enabled us to move to a new framework, while preserving all the code within redux; reducing our  workload significantly while migrating.
 
 My advice is to pick framework agnostic tools where you can, and write your application in a modular way, which will make refactoring and migrating stacks much simpler in the future.
 
@@ -218,6 +218,6 @@ A major challenge during this process is the loss of specifications. Work closel
 
 Any thing to add to this list of points? Please send me an <a href="mailto:tjinauyeung@gmail.com">email</a> or twitter me at [@tjinauyeung](https://twitter.com/tjinauyeung). I'm curious on your thoughts!
 
-In my next article I'd like to discuss in more detail how we used the discussed tips to migrate a Polymer based application to the newer React based tech stack. 
+In my next article I'd like to explain in more detail how we used these tips to migrate a Polymer based application to the newer React based tech stack.
 
 Stay tuned!
