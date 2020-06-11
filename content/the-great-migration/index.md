@@ -7,7 +7,21 @@ image: cover.jpeg
 ---
 
 <div class="center-image">
-  <iframe width="840" height="450" style="margin: 20px -70px;" src="https://www.youtube.com/embed/r6jcqCm5C1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <style>
+    .video {
+      width: 840px;
+      height: 450px;
+      margin: 20px -210px;
+    }
+    @media (max-width: 768px) {
+      .video {
+        width: 700px;
+        height: 315px;
+        margin: 20px 0;
+      }
+    }
+  </style>
+  <iframe class="video" src="https://www.youtube.com/embed/r6jcqCm5C1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Every year the caribou in Northern America embark on an epic journey in search for greener pastures. They head further North, along well-trod annual routes towards their summer grazing grounds in the mighty Tundra. Some herds may travel more than 600 miles during this trip. The reason for this massive undertaking? The environment is spent, and can no longer accommodate them. In order to survive, they need to migrate to newer, nutrient-richer soils.
@@ -40,7 +54,7 @@ Additionally, the technology you were relying on may not be actively developed a
 
 #### Recruitment
 
-The tech landscape keeps on changing at a rapid pace. With new frameworks, libraries and tools becoming the industry standard seemingly every week, engineers are pressured to keep up: searching for jobs that give them the opportunity to gain experience in these technologies. Buzz words like *"cutting edge"*, "*modern stack*", *"next generation"* are copy-pasted onto every job description, but remain suprisingly effective in luring new talent.
+The tech landscape keeps on changing at a rapid pace. With new frameworks, libraries and tools becoming the industry standard seemingly every week, engineers are pressured to keep up: searching for jobs that give them the opportunity to gain experience in these technologies. Buzz words like _"cutting edge"_, "_modern stack_", _"next generation"_ are copy-pasted onto every job description, but remain suprisingly effective in luring new talent.
 
 As your stack becomes outdated, it becomes more and more difficult to find new people who are excited to work with it.
 
@@ -50,7 +64,7 @@ Similarly, existing engineers will likely feel the same pressure to learn new te
 
 #### Solution
 
-One way to solve these issues is to modernise your stack; migrate all existing code to more modern technologies. An up to date stack can make recruiting easier and retain existing employees. Furthermore, it can enable new techniques and possibilities for your product, moving forward. However, depending on the size of your app and your team you may not have the resources for such an undertaking. 
+One way to solve these issues is to modernise your stack; migrate all existing code to more modern technologies. An up to date stack can make recruiting easier and retain existing employees. Furthermore, it can enable new techniques and possibilities for your product, moving forward. However, depending on the size of your app and your team you may not have the resources for such an undertaking.
 
 Currently, at [ING](https://developer.ing.com/openbanking/), I'm working on the migration of a front-end application with <span style="font-family: monospace;">58.252</span> LOC moving from [Polymer](https://www.polymer-project.org/) to a [React](https://reactjs.org/) based stack. At 99% of the way, I began analysing what factors contributed positively to the project, which can be summarized in the following:
 
@@ -74,11 +88,11 @@ In the remainder of the article I'll discuss each step more in depth.
 
 The first step is to create a support base. We wanted to have all noses pointing the same direction. Which meant getting all the stakeholders; the team, our PO and management on board with the idea. This was an essential step in order to avoid wasting time in an effort which risked being cancelled for lack of support.
 
-To do this effectively, we first pointed the current problem*, then discussed a way forward and, finally, presented our plan of the migration and all of its benefits.
+To do this effectively, we first pointed the current problem\*, then discussed a way forward and, finally, presented our plan of the migration and all of its benefits.
 
-Lucky for us, we had a very accommodating Product Owner who was empathetic from the start and helped us convince the MT layer of our plan as well. With the go-ahead we quickly  started with small experiment; a feasibility test.
+Lucky for us, we had a very accommodating Product Owner who was empathetic from the start and helped us convince the MT layer of our plan as well. With the go-ahead we quickly started with small experiment; a feasibility test.
 
-**see section above — The Problem*
+\*_see section above — The Problem_
 
 ---
 
@@ -118,7 +132,7 @@ Whichever approach you start with, agree with the team and work your way through
 
 Probably the most important technique to use is to perform the migration in increments instead of one big bang. Being able to migrate incrementally and have a working, deployable application each increment along the way, made the strategy applicable to apps of all sizes, small or big, because you never risk having a broken app during the migration.
 
-Looking at the evolution of development practises, the transition from [waterfall](https://en.wikipedia.org/wiki/Waterfall_model) practises to [agile](https://en.wikipedia.org/wiki/Agile_software_development) illustrates the benefits of working in increments. It brings continous delivery and the potential to discover bottlenecks and deal with them early. It speeds up the development process as a whole and never stops delivering business value. 
+Looking at the evolution of development practises, the transition from [waterfall](https://en.wikipedia.org/wiki/Waterfall_model) practises to [agile](https://en.wikipedia.org/wiki/Agile_software_development) illustrates the benefits of working in increments. It brings continous delivery and the potential to discover bottlenecks and deal with them early. It speeds up the development process as a whole and never stops delivering business value.
 
 We treated our migration in the same way. The idea was to refactor the entire app, one component at the time.
 
@@ -126,9 +140,9 @@ We treated our migration in the same way. The idea was to refactor the entire ap
   <img src="./increments.png" alt="image illustrating power of incremental change">
 </div>
 
-Working in increments also helped our conversation with deciding stakeholders. As there is no risk of having a broken app during the process, it minimises the risk and the weight of the decision. 
+Working in increments also helped our conversation with deciding stakeholders. As there is no risk of having a broken app during the process, it minimises the risk and the weight of the decision.
 
-One last benefit was that the work of the migration can be done in alignment with the other targets of the team. At any point, we could stop the migration and focus on delivering a new feature or perform a hot fix, without leaving the application in a broken state. 
+One last benefit was that the work of the migration can be done in alignment with the other targets of the team. At any point, we could stop the migration and focus on delivering a new feature or perform a hot fix, without leaving the application in a broken state.
 
 As a side note I'll add that we wanted to minimize the time spent in a hybrid state (with multiple technologies). It added a lot of complexity and cognitive burden to the developers; having to know different frameworks and switch contexts. Onboarding new recruits during the hybrid stage would also take more time. Therefore, I advice to complete the migration as soon as you can.
 
@@ -142,7 +156,7 @@ Incremental migration is very powerful, and in my view, a key factor in success.
 
 Keep your eyes on the prize. We have a tendency to improve what we see. While it is tempting to add new features while migrating, I'm of the opinion this should be avoided. You pose considerable risk going down a [refactoring rabbit hole](https://www.youtube.com/watch?v=8fnfeuoh4s8). Done repeatedly, this will slow down the migration and potentially add new bugs.
 
-However, on keeping the code clean, [the boy scout rule](https://www.matheus.ro/2017/12/11/clean-code-boy-scout-rule/) should still apply; leave the camp place a bit cleaner than you found it. 
+However, on keeping the code clean, [the boy scout rule](https://www.matheus.ro/2017/12/11/clean-code-boy-scout-rule/) should still apply; leave the camp place a bit cleaner than you found it.
 
 **New features**
 
@@ -159,9 +173,9 @@ In case you have new features which need to be implemented asap, do you implemen
 
 ### Decoupling
 
-Most of us know the value of modular, [decoupled](https://en.wikipedia.org/wiki/Loose_coupling) software,  In the light of a tech migration picking new tools and technologies, that are decoupled and framework agnostic, prevent vendor lock in and enable easier path to migration in the future. 
+Most of us know the value of modular, [decoupled](https://en.wikipedia.org/wiki/Loose_coupling) software, In the light of a tech migration picking new tools and technologies, that are decoupled and framework agnostic, prevent vendor lock in and enable easier path to migration in the future.
 
-To give a more concrete example, our legacy project was built around a [Redux](https://redux.js.org/introduction/core-concepts), encapsulating much of the front-end business logic. This choice proved to be huge time saver, since it enabled us to move to a new framework, while preserving all the code within Redux; reducing our  workload significantly while migrating.
+To give a more concrete example, our legacy project was built around a [Redux](https://redux.js.org/introduction/core-concepts), encapsulating much of the front-end business logic. This choice proved to be huge time saver, since it enabled us to move to a new framework, while preserving all the code within Redux; reducing our workload significantly while migrating.
 
 My advice is to pick framework agnostic tools where you can, and write your application in a modular way, which will make refactoring and migrating stacks much simpler in the future.
 
@@ -169,9 +183,9 @@ My advice is to pick framework agnostic tools where you can, and write your appl
 
 ### Testing
 
-Finally, testing enables us to refactor with confidence. There's a high chance that your code will break during a migration. It is subject to continuous and intense change. Besides, developers still need to familiarize themselves with the technology and the new workflow, especially in the beginning, which is likely to cause bugs. In order to catch bugs during the migration and / or have your business crucial paths working as expected, it is helpful to have end-to-end (e2e) tests* in place before you start.
+Finally, testing enables us to refactor with confidence. There's a high chance that your code will break during a migration. It is subject to continuous and intense change. Besides, developers still need to familiarize themselves with the technology and the new workflow, especially in the beginning, which is likely to cause bugs. In order to catch bugs during the migration and / or have your business crucial paths working as expected, it is helpful to have end-to-end (e2e) tests\* in place before you start.
 
-> *"End-to-end testing is a technique used to test whether the flow of an application right from start to finish is behaving as expected. The purpose of performing end-to-end testing is to identify system dependencies and to ensure that the data integrity is maintained between various system components and systems."*
+> _"End-to-end testing is a technique used to test whether the flow of an application right from start to finish is behaving as expected. The purpose of performing end-to-end testing is to identify system dependencies and to ensure that the data integrity is maintained between various system components and systems."_
 
 The benefits of having e2e testing is two-fold:
 
@@ -200,7 +214,7 @@ To solve this issue developers need to work closely together with the domain exp
 
 ### What's next?
 
-As is the case with perishable goods, code bases too, have an expiration date. When software ages, code becomes more and more complex. New features take longer to implement and it becomes harder to find the right people to work with a "legacy" app. 
+As is the case with perishable goods, code bases too, have an expiration date. When software ages, code becomes more and more complex. New features take longer to implement and it becomes harder to find the right people to work with a "legacy" app.
 
 At this point migrating the application to a more modern technology stack should be considered.
 
