@@ -66,7 +66,7 @@ Similarly, existing engineers will likely feel the same pressure to learn new te
 
 One way to solve these issues is to modernise your stack; migrate all existing code to more modern technologies. An up to date stack can make recruiting easier and retain existing employees. Furthermore, it can enable new techniques and prospects for your product in the future. However, depending on the size of your app and your team you may not have the resources for such an undertaking.
 
-Currently, at [ING](https://developer.ing.com/openbanking/), I'm working on the migration of a front-end application with <span style="font-family: monospace;">58.252</span> LOC moving from [Polymer](https://www.polymer-project.org/) to a [React](https://reactjs.org/) based stack. At 99% of the way, I began analysing what factors contributed positively to the project, which can be summarized in the following:
+Currently, at [ING](https://developer.ing.com/openbanking/), I'm working on the migration of a front-end application with <span style="font-family: monospace;">58,252</span> LOC moving from [Polymer](https://www.polymer-project.org/) to a [React](https://reactjs.org/) based stack. At 99% of the way, I began analysing what factors contributed positively to the project, which can be summarized in the following:
 
 - **Buy in** — Convince stakeholders
 - **Feasibility** — Test your approach
@@ -116,7 +116,7 @@ With a positive result from the feasibility test we've decided on a core techniq
 
 Depending on the size of the application the migration can take a significant amount of time. Upon the start, the question arise, where should we start? We started by discussing this issue with the team, then we brainstormed to come up with a logical prioritisation of our efforts. The parts of the application which are removed in the future could be skipped over, the parts which have the most business value are higher priority. The parts which will be subject to a near future update, should be migrated first in order to prevent double work.
 
-Additionaly, my preference is to start with the leaf nodes and work your way to the core. By leaf nodes I mean services, objects, components that are at the leafs of your application dependency graph. Oher nodes may depend on them, but they themselves have little to no dependencies. Because of this, you can work on them in isolation without having to worry about its many dependencies, making this a significantly easier task. Furthermore, once a few simple leaf nodes are migrated, the team gains more experience with the new stack and picks up momentum; increasing our velocity.
+Additionaly, my preference is to start with the leaf nodes and work your way to the core. By leaf nodes I mean services, objects, components that are at the leafs of your application dependency graph. Other nodes may depend on them, but they themselves have few or no dependencies. Because of this, you can work on them in isolation without having to worry about its many dependencies, making this a significantly easier task. Furthermore, once a few simple leaf nodes are migrated, the team gains more experience with the new stack and picks up momentum; increasing our velocity.
 
 <div class="center-image">
   <img src="./leaf-nodes.png" alt="leaf nodes diagram">
